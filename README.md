@@ -27,7 +27,7 @@ Porcentaje de decisiones correctas sobre el total de encuentros evaluados: % de 
 
 **Cómo decide.** Neurona: Pesos: w1 = 4; w2 = -4; w3 = -0.5; Sesgo: b = 0
 
-**Variables que usa y por qué.** Vida del NPC (%), Vida del jugador (%), Distancia (metros).
+**Variables que usa y por qué.** Vida del NPC (%), Vida del jugador (%), Distancia (metros). Elegimos estas variables ya que cumplen con las características de que sean relevantes, medibles, no redundantes y no tiene atajos indeseados
 
 **Cómo se corre en vivo.** Cuentas a mano. 
 Caso 1 (75, 18, 19): x₁ = 0.75, x₂ = 0.18, x₃ = 0.6333
