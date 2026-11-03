@@ -180,7 +180,10 @@ Riesgo:
 
 | # | Qué le pedimos | Qué aceptamos | Qué rechazamos y por qué |
 |---|---|---|---|
-| 1 | <> | <> | <> |
+| 1 | Crear una neurona sobre el comportamiento de un NPC (“¿ataca o se retira?”) con su PEAS, objetivo y métrica, siguiendo el documento de la materia | La estructura general del trabajo y la observación de que la pregunta SÍ/NO dejaba afuera un caso (atacar y perder) | Que hiciera todo de una sola vez (neurona, PEAS, matriz, etc.). Queríamos avanzar por partes y decidir nosotros cada paso |
+| 2 | Empezar solo por el PEAS, el objetivo y la métrica, sin crear nada sin consultarnos | Empezar solo por el PEAS, el objetivo y la métrica, sin crear nada sin consultarnos | 
+| 3 | Crear dos casos de ejemplo | Un caso en el que el NPC ataca y otro en el que se retira |
+| 4 |  | 
 
 **Corridas contra el evaluador**
 
