@@ -129,8 +129,8 @@ Total de aciertos: 78.57% (11/14)
 
 | | Predice SÍ | Predice NO |
 |---|---|---|
-| **Real SÍ** | VP = 4 | FN = 2 |
-| **Real NO** | FP = 1 | VN = 7 |
+| **Real SÍ** | VP = 4 | FN = 1 |
+| **Real NO** | FP = 2 | VN = 7 |
 
 **Prueba (casos 15–20)**
 
