@@ -181,14 +181,14 @@ Riesgo:
 | # | Qué le pedimos | Qué aceptamos | Qué rechazamos y por qué |
 |---|---|---|---|
 | 1 | Crear una neurona sobre el comportamiento de un NPC (“¿ataca o se retira?”) con su PEAS, objetivo y métrica, siguiendo el documento de la materia | La estructura general del trabajo y la observación de que la pregunta SÍ/NO dejaba afuera un caso (atacar y perder) | Que hiciera todo de una sola vez (neurona, PEAS, matriz, etc.). Queríamos avanzar por partes y decidir nosotros cada paso |
-| 2 | Empezar solo por el PEAS, el objetivo y la métrica, sin crear nada sin consultarnos | Empezar solo por el PEAS, el objetivo y la métrica, sin crear nada sin consultarnos | 
-| 3 | Crear dos casos de ejemplo | Un caso en el que el NPC ataca y otro en el que se retira |
+| 2 | Empezar solo por el PEAS, el objetivo y la métrica, sin crear nada sin consultarnos | Empezar solo por el PEAS, el objetivo y la métrica, sin crear nada sin consultarnos | No rechazamos |
+| 3 | Crear dos casos de ejemplo | Un caso en el que el NPC ataca y otro en el que se retira | No rechazamos |
 | 4 | Pesos y sesgo para una neurona, dados los datos de entrenamiento. Nos dio 2 conjuntos de datos, uno utilizando la lógica y otros completamente aleatorios | La estructura de la neurona sigmoide y la normalización | Rechazamos pesos aleatorios, porque nos servía mas que la IA utilice la lógica para plantear los pesos y sesgo |
 | 5 | Todas las cuentas a mano de los 14 casos | Las cuentas de los casos en donde los pesos y el sesgo fueron propuestos por lógica | Las cuentas donde los pesos y el sesgo fueron propuestos aleatoriamente |
-| 6 | Resolver el set de prueba (casos 15 a 20) | Resolverlo con los mismos pesos | No pidieron reentrenar |
-| 7 | Cambiar los umbrales a z = -2 y 2 y ver los errores, para evaluar el error más caro | Usarlo como análisis para elegir el error más caro | No adoptaron los umbrales ±2 como modelo final (confirmar)| 
-| 8 | Qué cambios reducen el falso positivo | Se propuso adoptar b = -0.5 como modelo v2, con ajuste manual | 
-| 9 | Ayuda con la corrida 1 (5,5/10)| Las correcciones | 
+| 6 | Resolver el set de prueba (casos 15 a 20) | Resolverlo con los mismos pesos | No rechazamos |
+| 7 | Cambiar los umbrales a z = -2 y 2 y ver los errores, para evaluar el error más caro | Usarlo como análisis para elegir el error más caro | No adoptaron los umbrales ±2 como modelo final |
+| 8 | Qué cambios reducen el falso positivo | Se propuso adoptar b = -0.5 como modelo v2, con ajuste manual | No rechazamos |
+| 9 | Ayuda con la corrida 1 (5,5/10)| Las correcciones | no rechazamos |
 
 **Corridas contra el evaluador**
 
