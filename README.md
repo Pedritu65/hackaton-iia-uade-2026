@@ -11,11 +11,11 @@
 
 ## 1. Formulación y PEAS
 
-**La pregunta.** En este encuentro, ¿el NPC gana si ataca?” Si la respuesta es SÍ, ataca. Si es NO, huye.
+**La pregunta.** En este encuentro, ¿al NPC le conviene atacar? Clase positiva (SÍ) = el NPC ganaría si ataca → ataca. Clase negativa (NO) = el NPC perdería si ataca → se retira. En la tabla real, 1 = ganaría, 0 = perdería.
 
 | PEAS | Su sistema |
 |---|---|
-| Medida de rendimiento | Que el NPC acierte su decisión en cada encuentro: atacar cuando tiene ventaja para ganar y retirarse cuando el enfrentamiento le es desfavorable (% de decisiones correctas = (encuentros en los que atacó y ganó + encuentros en los que se retiró y habría perdido) / total de encuentros × 10) |
+| Medida de rendimiento | Que el NPC acierte su decisión en cada encuentro: atacar cuando tiene ventaja para ganar y retirarse cuando el enfrentamiento le es desfavorable (% de decisiones correctas = (encuentros en los que atacó y ganó + encuentros en los que se retiró y habría perdido) / total de encuentros × 100) |
 | Entorno | Mapa del juego: jugador, NPCs aliados, coberturas, obstáculos y rutas de escape |
 | Actuadores | Atacar, retirarse a una zona segura y pedir refuerzos |
 | Sensores | Visión virtual, oído, lectura de su propia salud y detección de aliados cercanos |
@@ -150,7 +150,7 @@ Total de aciertos: 78.57% (11/14)
 
 ## 4. El error más caro
 
-El error mas caro es el Falso Positivo, debido a que el NPC muere de forma absurda y es lo que su objetivo dice que hay que evitar. El cambio que hicimos en el sistema para cometer menos este error es actualizar los pesos con descenso de gradiente, multiplicar el error por un factor mayor cuando el NPC atacó y debía huir
+El error mas caro es el Falso Positivo, debido a que el NPC muere de forma absurda y es lo que su objetivo dice que hay que evitar. El cambio en el sistema que haríamos en un futuro para cometer menos este error es actualizar los pesos con descenso de gradiente, multiplicar el error por un factor mayor cuando el NPC atacó y debía huir. El falso negativo hace que el jugador vea un enemigo cobarde y el combate pierda desafío. Es un error molesto, pero recuperable: el NPC puede volver o pedir refuerzos. En cambio, el falso positivo hace que el NPC muera de forma absurda, algo que rompe la credibilidad de la IA de forma más visible, por lo que comprendemos que este error se paga mas caro.
 
 ## 5. ¿Comparado contra qué?
 
@@ -186,4 +186,4 @@ Riesgo:
 
 | Corrida | Nota | Agujero que encontró | Qué cambiamos |
 |---|---|---|---|
-| 1 | 5,5 | ¿Cuánto suma VP+FN en tu matriz de entrenamiento y cuántos casos entre el 1 y el 14 tienen resultado real SÍ? ¿Cuál es el modelo real: los pesos de la sección 2 o los que cambiaron con descenso de gradiente? ¿Qué le pasa al jugador cuando el NPC se retira en un combate que podía ganar? | <> |
+| 1 | 5,5 | ¿Cuánto suma VP+FN en tu matriz de entrenamiento y cuántos casos entre el 1 y el 14 tienen resultado real SÍ? ¿Cuál es el modelo real: los pesos de la sección 2 o los que cambiaron con descenso de gradiente? ¿Qué le pasa al jugador cuando el NPC se retira en un combate que podía ganar? | Conteo correcto de los resultados de entrenamiento, corrigiendo los porcentajes de las métricas. Corrección del punto 4, donde afirmabamos que habiamos hecho el cambio de pesos y nos contradeciamos con lo que nuestro sistema decia. El jugador percibe un NPC cobarde y el combate pierde desafío. Es menos grave que el falso positivo porque es recuperable.|
