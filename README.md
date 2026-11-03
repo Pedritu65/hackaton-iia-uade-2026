@@ -1,17 +1,17 @@
-# <Código> · <Título de su problemática>
+# <M13> · <¿El NPC ataca o se retira?>
 
 > **Hackatón IIA · UADE · 3.4.257.** Este README es la plantilla del grupo. En su fork, reemplacen todo lo que está entre `< >` y borren esta nota. Las bases están en `BASES.md` y su ficha en `problematicas/`.
 
-**Integrantes:** <nombre y apellido> · <nombre y apellido>
-**IA declarada:** <la del grupo desde la Clase 1>
-**Pista:** <Neurona / Reglas / Agente>
+**Integrantes:** <Pedro Iturbide> · <Enzo Godoy>
+**IA declarada:** <Claude>
+**Pista:** <Neurona>
 **Publicación en LinkedIn:** <link>
 
 ---
 
 ## 1. Formulación y PEAS
 
-**La pregunta.** <Para cada caso, ¿…? SÍ significa: …>
+**La pregunta.** <Para cada caso, ¿SÍ o NO? SÍ = si el NPC ataca, gana el enfrentamiento.>
 
 | PEAS | Su sistema |
 |---|---|
