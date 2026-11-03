@@ -11,16 +11,17 @@
 
 ## 1. Formulación y PEAS
 
-**La pregunta.** <Para cada caso, ¿SÍ o NO? SÍ = si el NPC ataca, gana el enfrentamiento.>
+**La pregunta.** En este encuentro, ¿el NPC gana si ataca?” Si la respuesta es SÍ, ataca. Si es NO, huye.
 
 | PEAS | Su sistema |
 |---|---|
-| Medida de rendimiento | <cómo se sabe si decidió bien> |
-| Entorno | <dónde y con qué decide> |
-| Actuadores | <qué hace con la decisión> |
-| Sensores | <qué datos recibe> |
+| Medida de rendimiento | Que el NPC acierte su decisión en cada encuentro: atacar cuando tiene ventaja para ganar y retirarse cuando el enfrentamiento le es desfavorable (% de decisiones correctas = (encuentros en los que atacó y ganó + encuentros en los que se retiró y habría perdido) / total de encuentros × 10) |
+| Entorno | Mapa del juego: jugador, NPCs aliados, coberturas, obstáculos y rutas de escape |
+| Actuadores | Atacar, retirarse a una zona segura y pedir refuerzos |
+| Sensores | Visión virtual, oído, lectura de su propia salud y detección de aliados cercanos |
 
-**Objetivo y métrica.** <Qué es lo que de verdad importa en su problema y con qué métrica lo van a medir. ¿Son lo mismo?>
+**Objetivo y métrica.** Que el NPC enemigo decida en cada encuentro si atacar o retirarse de forma creíble y desafiante, evitando morir de forma absurda sin volverse cobarde, para que el combate resulte entretenido para el jugador. 
+Porcentaje de decisiones correctas sobre el total de encuentros evaluados: % de decisiones correctas = (encuentros en los que atacó y ganó + encuentros en los que se retiró y habría perdido) / total de encuentros × 100
 
 ## 2. El sistema
 
