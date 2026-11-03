@@ -165,7 +165,14 @@ El error mas caro es el Falso Positivo, debido a que el NPC muere de forma absur
 
 ## 6. Riesgo: el camino completo
 
-<Datos → modelo → decisión → consecuencia aplicado a su caso. Al menos un riesgo concreto.>
+Camino completo.
+Datos: 14 encuentros de entrenamiento y 6 de prueba, con tres variables (vida del NPC, vida del jugador, distancia). 
+Modelo: una neurona sigmoide con pesos propuestos por Claude con criterio del dominio (w₁ = 4, w₂ = -4, w₃ = -0.5, b = 0), no entrenados con los datos. Entradas normalizadas (vida/100, distancia/30).
+Decisión: si z ≥ 0, el NPC ataca; si no, se retira.
+Consecuencia: en entrenamiento acierta 78.57% (11 de 14). Cuando falla, o el NPC muere de forma absurda (falso positivo: casos 7 y 12) o se retira cuando podía ganar (falso negativo: caso 6).
+
+Riesgo:
+1. Falso positivo cerca del umbral. Los casos 7 y 12 tenían z = 0.29 y 0.13, casi en el límite, y ahí la neurona atacó y se equivocó. En el juego, el jugador vería al NPC lanzarse a un combate perdido con vida alta de ambos, justo lo que el objetivo dice que hay que evitar (“morir de forma absurda”). Mitigación: subir el umbral (b = -0.5) o hacer que el NPC pida refuerzos cuando z es chico.
 
 ## 7. Bitácora
 
