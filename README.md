@@ -186,4 +186,4 @@ Riesgo:
 
 | Corrida | Nota | Agujero que encontró | Qué cambiamos |
 |---|---|---|---|
-| 1 | 5,5 |  | <> |
+| 1 | 5,5 | ¿Cuánto suma VP+FN en tu matriz de entrenamiento y cuántos casos entre el 1 y el 14 tienen resultado real SÍ? ¿Cuál es el modelo real: los pesos de la sección 2 o los que cambiaron con descenso de gradiente? ¿Qué le pasa al jugador cuando el NPC se retira en un combate que podía ganar? | <> |
