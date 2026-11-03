@@ -25,11 +25,12 @@ Porcentaje de decisiones correctas sobre el total de encuentros evaluados: % de 
 
 ## 2. El sistema
 
-**Cómo decide.** Neurona: Pesos: w1 = 0.5; w2 = -2.0; w3 = -0.6; Sesgo: b = 0.8
+**Cómo decide.** Neurona: Pesos: w1 = 4; w2 = -4; w3 = -0.5; Sesgo: b = 0
 
 **Variables que usa y por qué.** Vida del NPC (%), Vida del jugador (%), Distancia (metros).
 
 **Cómo se corre en vivo.** Cuentas a mano. 
+
 
 **Dos casos de ejemplo.**
 
