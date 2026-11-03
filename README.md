@@ -5,7 +5,8 @@
 **Integrantes:** Pedro Iturbide · Enzo Godoy
 **IA declarada:** Claude
 **Pista:** Neurona
-**Publicación en LinkedIn:** https://lnkd.in/p/g2DiTJ3D
+**Publicación en LinkedIn:** https://lnkd.in/p/g2DiTJ3D 
+https://lnkd.in/p/dYQ6BetV
 
 ---
 
