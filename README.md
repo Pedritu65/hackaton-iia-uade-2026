@@ -186,4 +186,4 @@ Riesgo:
 
 | Corrida | Nota | Agujero que encontró | Qué cambiamos |
 |---|---|---|---|
-| 1 | <> | <> | <> |
+| 1 | 5,5 |  | <> |
