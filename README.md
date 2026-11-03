@@ -25,18 +25,18 @@ Porcentaje de decisiones correctas sobre el total de encuentros evaluados: % de 
 
 ## 2. El sistema
 
-**Cómo decide.** <Neurona: pesos y sesgo. Reglas: la lista de reglas si‑entonces. Agente: la regla con la que elige la acción.>
+**Cómo decide.** Neurona: pesos y sesgo.
 
-**Variables que usa y por qué.** <Cuáles usa, cuáles descarta y por qué.>
+**Variables que usa y por qué.** Vida del NPC (%), Vida del jugador (%), Distancia (metros).
 
-**Cómo se corre en vivo.** <Pasos concretos para resolver un caso nuevo: link al Colab, a la planilla o la cuenta a mano.>
+**Cómo se corre en vivo.** Cuentas a mano.
 
 **Dos casos de ejemplo.**
 
 | Caso inventado | Valores | Salida del sistema |
 |---|---|---|
-| A | <…> | <SÍ/NO> |
-| B | <…> | <SÍ/NO> |
+| A | Vida del NPC 70%, vida del jugador 25%, distancia 10 m | SÍ |
+| B | Vida del NPC 40%, vida del jugador 80%, distancia 20 m. | NO |
 
 ## 3. Medición
 
