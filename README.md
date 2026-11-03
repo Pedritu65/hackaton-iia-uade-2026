@@ -143,8 +143,8 @@ Total de aciertos: 78.57% (11/14)
 |---|---|---|
 | Exactitud | 78.57% | 83.33% |
 | Precisión | 80% | 100% |
-| Sensibilidad | 66.67% | 75% |
-| Especificidad | 87.5% | 100% |
+| Sensibilidad | 77.78% | 75% |
+| Especificidad | 66.67% | 100% |
 
 **Entrenamiento contra prueba.** Si, hay diferencia, porque en los datos de prueba fue mas certera, aunque hubieron menos casos. Creemos que esto es generalización ya que le fue mejor con los casos que no vio y supo como resolverlos adecuadamente.
 
