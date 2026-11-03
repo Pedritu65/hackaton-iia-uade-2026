@@ -114,6 +114,7 @@ Caso 14 (32, 59, 7): x₁ = 0.32, x₂ = 0.59, x₃ = 0.2333
 z = 1.2800 − 2.3600 − 0.1167 = −1.1967
 e^(1.1967) = 3.3095 → y = 1/4.3095 = 0.232 → Huye
 
+Total de aciertos: 78.57% (11/14)
 
 **Dos casos de ejemplo.**
 
@@ -128,28 +129,28 @@ e^(1.1967) = 3.3095 → y = 1/4.3095 = 0.232 → Huye
 
 | | Predice SÍ | Predice NO |
 |---|---|---|
-| **Real SÍ** | VP =  | FN = <> |
-| **Real NO** | FP = <> | VN = <> |
+| **Real SÍ** | VP = 4 | FN = 2 |
+| **Real NO** | FP = 1 | VN = 7 |
 
 **Prueba (casos 15–20)**
 
 | | Predice SÍ | Predice NO |
 |---|---|---|
-| **Real SÍ** | VP = <> | FN = <> |
-| **Real NO** | FP = <> | VN = <> |
+| **Real SÍ** | VP = 3 | FN = 1 |
+| **Real NO** | FP = 0 | VN = 2 |
 
 | Métrica | Entrenamiento | Prueba |
 |---|---|---|
-| Exactitud | <> | <> |
-| Precisión | <> | <> |
-| Sensibilidad | <> | <> |
-| Especificidad | <> | <> |
+| Exactitud | 78.57% | 83.33% |
+| Precisión | 80% | 100% |
+| Sensibilidad | 66.67% | 75% |
+| Especificidad | 87.5% | 100% |
 
-**Entrenamiento contra prueba.** <¿Hay diferencia? ¿Por qué? ¿Sobreajuste o generalización?>
+**Entrenamiento contra prueba.** Si, hay diferencia, porque en los datos de prueba fue mas certera, aunque hubieron menos casos. Creemos que esto es generalización ya que le fue mejor con los casos que no vio y supo como resolverlos adecuadamente.
 
 ## 4. El error más caro
 
-<¿Es peor el falso positivo o el falso negativo en su problema? ¿Por qué, según la ficha? ¿Qué cambiaron en el sistema para cometer menos ese error?>
+El error mas caro es el Falso Positivo, debido a que el NPC muere de forma absurda y es lo que su objetivo dice que hay que evitar. El cambio que hicimos en el sistema para cometer menos este error es actualizar los pesos con descenso de gradiente, multiplicar el error por un factor mayor cuando el NPC atacó y debía huir
 
 ## 5. ¿Comparado contra qué?
 
