@@ -154,14 +154,14 @@ El error mas caro es el Falso Positivo, debido a que el NPC muere de forma absur
 
 ## 5. ¿Comparado contra qué?
 
-**Línea base trivial.** <Qué resultado saca un sistema que responde siempre lo mismo, y cómo se compara el suyo.>
+**Línea base trivial.** Un sistema que siempre responde lo mismo tiene menor exactidud que nuestro sistema. Para ser especificos, un sistema que siempre responde que si tiene una exactitud del 35.71% y un sistema que siempre contesta que no tiene una exactitud del 64.29%. El nuestro tiene una exactitud de 78.57%.
 
 | Checklist (Clase 6) | Respuesta |
 |---|---|
-| ¿Qué datos? | <> |
-| ¿Qué métrica? | <> |
-| ¿Comparado contra qué? | <> |
-| ¿Quién lo midió? | <> |
+| ¿Qué datos? | Se utilizaron 14 casos de entrenamiento, con variables como: "vida NPC", "Vida Jugador" y "Distancia". Etiqueta real: Si el NPC ganaba al atacar. |
+| ¿Qué métrica? | Exactitud |
+| ¿Comparado contra qué? | Contra un sistema que siempre huye y que siempre ataca. |
+| ¿Quién lo midió? | Nosotros lo medimos, comparando la salida de la neurona con la columna real. Los pesos los propuso Claude y las cuentas se hicieron a mano, sin ver las etiquetas reales. |
 
 ## 6. Riesgo: el camino completo
 
